@@ -1,28 +1,12 @@
-const withPWA = require('@ducanh2912/next-pwa').default({
-  dest: 'public',
-  disable: process.env.NODE_ENV === 'development',
-  register: true,
-  skipWaiting: true,
-  cacheOnFrontEndNav: true,
-  aggressiveFrontEndNavCaching: true,
-  reloadOnOnline: true,
-  swcMinify: true,
-  workboxOptions: {
-    disableDevLogs: true,
-  }
-});
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'standalone',
   images: {
     unoptimized: true
   },
-  // Ensure data files are included in the build
   experimental: {
     serverComponentsExternalPackages: ['sharp'],
   },
-  // Add headers for CORS
   async headers() {
     return [
       {
@@ -35,15 +19,23 @@ const nextConfig = {
       },
     ];
   },
-  webpack: (config, { isServer }) => {
-    if (isServer) {
-      const paths = ['./data/setlists.json', './data/Songs.json', './data/master-status.json'];
-      paths.forEach(path => {
-        config.externals.push(path);
-      });
-    }
-    return config;
-  },
 };
 
-module.exports = withPWA(nextConfig);
+// Apply PWA configuration only in production
+const config = process.env.NODE_ENV === 'production' 
+  ? require('@ducanh2912/next-pwa').default({
+      dest: 'public',
+      disable: false,
+      register: true,
+      skipWaiting: true,
+      cacheOnFrontEndNav: true,
+      aggressiveFrontEndNavCaching: true,
+      reloadOnOnline: true,
+      swcMinify: true,
+      workboxOptions: {
+        disableDevLogs: true,
+      }
+    })(nextConfig)
+  : nextConfig;
+
+module.exports = config;
