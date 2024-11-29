@@ -5,8 +5,7 @@ const nextConfig = {
     unoptimized: true
   },
   experimental: {
-    serverComponentsExternalPackages: ['sharp'],
-    outputFileTracingRoot: process.env.NODE_ENV === 'development' ? undefined : process.cwd(),
+    serverComponentsExternalPackages: ['sharp']
   },
   async headers() {
     return [
@@ -19,28 +18,17 @@ const nextConfig = {
         ],
       },
     ];
-  },
-  // Disable traces in development
-  generateBuildId: async () => {
-    return 'build-' + Date.now();
-  },
+  }
 };
 
 // Apply PWA configuration only in production
-const config = process.env.NODE_ENV === 'production' 
+const withPWA = process.env.NODE_ENV === 'production'
   ? require('@ducanh2912/next-pwa').default({
       dest: 'public',
       disable: false,
       register: true,
-      skipWaiting: true,
-      cacheOnFrontEndNav: true,
-      aggressiveFrontEndNavCaching: true,
-      reloadOnOnline: true,
-      swcMinify: true,
-      workboxOptions: {
-        disableDevLogs: true,
-      }
-    })(nextConfig)
-  : nextConfig;
+      skipWaiting: true
+    })
+  : (config) => config;
 
-module.exports = config;
+module.exports = withPWA(nextConfig);
