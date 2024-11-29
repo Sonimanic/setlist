@@ -3,6 +3,7 @@ import path from 'path';
 import { NextResponse } from 'next/server';
 import crypto from 'crypto';
 
+// Use path.join to handle paths consistently across environments
 const setlistsPath = path.join(process.cwd(), 'data', 'setlists.json');
 const backupDir = path.join(process.cwd(), 'data', 'backups');
 
@@ -83,7 +84,10 @@ async function readSetlists() {
     console.log('File exists:', exists);
     
     if (!exists) {
-      console.log('File does not exist, returning empty setlists');
+      console.log('File does not exist, checking data directory');
+      const dataDir = path.join(process.cwd(), 'data');
+      const files = await fs.readdir(dataDir);
+      console.log('Files in data directory:', files);
       return { setlists: {} };
     }
     
@@ -110,8 +114,7 @@ export async function GET() {
     console.log('Current working directory:', process.cwd());
     console.log('Setlists path:', setlistsPath);
     
-    await ensureDataDirectory();
-    await initializeSetlistsFile();
+    await ensureBackupDirectory();
     
     console.log('About to read setlists file');
     const data = await readSetlists();
@@ -119,7 +122,10 @@ export async function GET() {
     
     return new NextResponse(JSON.stringify(data), {
       status: 200,
-      headers: headers
+      headers: {
+        'Content-Type': 'application/json',
+        ...headers
+      }
     });
   } catch (error) {
     console.error('Error in GET route:', error);
@@ -127,7 +133,9 @@ export async function GET() {
       status: 500,
       headers: {
         'Content-Type': 'application/json',
-        ...headers
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+        'Access-Control-Allow-Headers': 'Content-Type, Authorization',
       }
     });
   }

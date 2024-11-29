@@ -294,8 +294,17 @@ export default function Home() {
     const loadSetlistsAndLastUsed = async () => {
       try {
         // Load all setlists
-        const setlistsResponse = await fetch('/api/setlists');
+        const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL 
+          ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}` 
+          : '';
+        const setlistsResponse = await fetch(`${baseUrl}/api/setlists`, {
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+          },
+        });
         if (!setlistsResponse.ok) {
+          console.error('Failed to load setlists:', setlistsResponse.status, await setlistsResponse.text());
           throw new Error('Failed to load setlists');
         }
         const setlistsData = await setlistsResponse.json();
