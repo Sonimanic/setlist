@@ -4,8 +4,9 @@ import { NextResponse } from 'next/server';
 import crypto from 'crypto';
 
 // Use path.join to handle paths consistently across environments
-const setlistsPath = path.join(process.cwd(), 'data', 'setlists.json');
-const backupDir = path.join(process.cwd(), 'data', 'backups');
+const DATA_DIR = path.join(process.cwd(), 'data');
+const setlistsPath = path.join(DATA_DIR, 'setlists.json');
+const backupDir = path.join(DATA_DIR, 'backups');
 
 // Ensure the backup directory exists
 async function ensureBackupDirectory() {
@@ -59,11 +60,10 @@ async function createBackup() {
 
 // Ensure the data directory exists
 async function ensureDataDirectory() {
-  const dataDir = path.join(process.cwd(), 'data');
   try {
-    await fs.access(dataDir);
+    await fs.access(DATA_DIR);
   } catch {
-    await fs.mkdir(dataDir, { recursive: true });
+    await fs.mkdir(DATA_DIR, { recursive: true });
   }
 }
 
@@ -76,49 +76,71 @@ async function initializeSetlistsFile() {
   }
 }
 
-// Read current setlists
+// Read current setlists with detailed error logging
 async function readSetlists() {
   try {
-    console.log('Attempting to read file:', setlistsPath);
+    console.log('Current working directory:', process.cwd());
+    console.log('Data directory:', DATA_DIR);
+    console.log('Setlists path:', setlistsPath);
+    
+    // List contents of data directory
+    try {
+      const files = await fs.readdir(DATA_DIR);
+      console.log('Files in data directory:', files);
+    } catch (error) {
+      console.error('Error reading data directory:', error);
+    }
+
+    // Check if file exists
     const exists = await fs.access(setlistsPath).then(() => true).catch(() => false);
-    console.log('File exists:', exists);
+    console.log('Setlists file exists:', exists);
     
     if (!exists) {
-      console.log('File does not exist, checking data directory');
-      const dataDir = path.join(process.cwd(), 'data');
-      const files = await fs.readdir(dataDir);
-      console.log('Files in data directory:', files);
+      console.log('Creating empty setlists file');
+      await fs.writeFile(setlistsPath, JSON.stringify({ setlists: {} }, null, 2));
       return { setlists: {} };
     }
     
-    const data = await fs.readFile(setlistsPath, 'utf8');
-    console.log('Raw data length:', data.length);
-    const parsed = JSON.parse(data);
-    console.log('Successfully parsed JSON');
-    return parsed;
+    // Read and parse file
+    try {
+      const data = await fs.readFile(setlistsPath, 'utf8');
+      console.log('Raw data length:', data.length);
+      const parsed = JSON.parse(data);
+      console.log('Successfully parsed JSON, keys:', Object.keys(parsed));
+      return parsed;
+    } catch (error) {
+      console.error('Error reading/parsing setlists file:', error);
+      throw error;
+    }
   } catch (error) {
-    console.error('Error reading setlists:', error);
-    return { setlists: {} };
+    console.error('Error in readSetlists:', error);
+    throw error;
   }
+}
+
+// OPTIONS handler for CORS
+export async function OPTIONS() {
+  return new NextResponse(null, {
+    status: 200,
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+      'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+    },
+  });
 }
 
 export async function GET() {
   try {
-    // Set CORS headers
     const headers = {
       'Access-Control-Allow-Origin': '*',
       'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
       'Access-Control-Allow-Headers': 'Content-Type, Authorization',
     };
 
-    console.log('Current working directory:', process.cwd());
-    console.log('Setlists path:', setlistsPath);
-    
-    await ensureBackupDirectory();
-    
-    console.log('About to read setlists file');
+    console.log('GET request received');
     const data = await readSetlists();
-    console.log('Successfully read setlists:', Object.keys(data.setlists || {}).length);
+    console.log('Successfully read setlists');
     
     return new NextResponse(JSON.stringify(data), {
       status: 200,
@@ -129,7 +151,7 @@ export async function GET() {
     });
   } catch (error) {
     console.error('Error in GET route:', error);
-    return new NextResponse(JSON.stringify({ setlists: {}, error: error.message }), {
+    return new NextResponse(JSON.stringify({ error: error.message }), {
       status: 500,
       headers: {
         'Content-Type': 'application/json',
@@ -141,21 +163,8 @@ export async function GET() {
   }
 }
 
-// Handle OPTIONS requests for CORS
-export async function OPTIONS() {
-  return new NextResponse(null, {
-    status: 204,
-    headers: {
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
-      'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-    },
-  });
-}
-
 export async function POST(request) {
   try {
-    // Set CORS headers
     const headers = {
       'Access-Control-Allow-Origin': '*',
       'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
@@ -227,7 +236,6 @@ export async function POST(request) {
 
 export async function PUT(request) {
   try {
-    // Set CORS headers
     const headers = {
       'Access-Control-Allow-Origin': '*',
       'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
@@ -278,7 +286,6 @@ export async function PUT(request) {
 
 export async function DELETE(request) {
   try {
-    // Set CORS headers
     const headers = {
       'Access-Control-Allow-Origin': '*',
       'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
