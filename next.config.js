@@ -18,13 +18,12 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
+  // Ensure data files are included in the build
   experimental: {
     serverComponentsExternalPackages: ['sharp'],
+    outputFileTracing: true,
   },
-  outputFileTracing: true,
-  output: {
-    standalone: true,
-  },
+  // Add headers for CORS
   async headers() {
     return [
       {
