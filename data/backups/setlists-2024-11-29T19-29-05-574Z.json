@@ -254,17 +254,11 @@
         }
       ],
       "created": "2024-11-25T02:43:14.509Z",
-      "updated": "2024-11-29T19:29:11.481Z"
+      "updated": "2024-11-29T19:29:05.517Z"
     },
     "869352a5da003fbb866aee0eaa6de7a7": {
       "name": "The BOB",
       "setlist": [
-        {
-          "type": "break",
-          "setlistId": "break-1732591946695",
-          "id": "break-1732591946695",
-          "name": "Set 1"
-        },
         {
           "name": "I'm Gonna Be (500 Miles)",
           "artist": "The Proclaimers",
@@ -375,6 +369,12 @@
           "date_updated": "2021-11-18 16:17:57",
           "id": "fhYyDq",
           "setlistId": "fhYyDq-1732908483456"
+        },
+        {
+          "type": "break",
+          "setlistId": "break-1732591946695",
+          "id": "break-1732591946695",
+          "name": "Set 1"
         },
         {
           "name": "Forget You (C Dm F)",
@@ -655,7 +655,7 @@
         }
       ],
       "created": "2024-11-25T02:43:22.920Z",
-      "updated": "2024-11-29T19:29:36.362Z"
+      "updated": "2024-11-29T19:28:59.495Z"
     },
     "1732583629892": {
       "id": "1732583629892",
