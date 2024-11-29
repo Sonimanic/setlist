@@ -6,6 +6,7 @@ const nextConfig = {
   },
   experimental: {
     serverComponentsExternalPackages: ['sharp'],
+    outputFileTracingRoot: process.env.NODE_ENV === 'development' ? undefined : process.cwd(),
   },
   async headers() {
     return [
@@ -22,10 +23,6 @@ const nextConfig = {
   // Disable traces in development
   generateBuildId: async () => {
     return 'build-' + Date.now();
-  },
-  experimental: {
-    ...nextConfig.experimental,
-    outputFileTracingRoot: process.env.NODE_ENV === 'development' ? undefined : process.cwd(),
   },
 };
 
