@@ -78,8 +78,20 @@ async function initializeSetlistsFile() {
 // Read current setlists
 async function readSetlists() {
   try {
+    console.log('Attempting to read file:', setlistsPath);
+    const exists = await fs.access(setlistsPath).then(() => true).catch(() => false);
+    console.log('File exists:', exists);
+    
+    if (!exists) {
+      console.log('File does not exist, returning empty setlists');
+      return { setlists: {} };
+    }
+    
     const data = await fs.readFile(setlistsPath, 'utf8');
-    return JSON.parse(data);
+    console.log('Raw data length:', data.length);
+    const parsed = JSON.parse(data);
+    console.log('Successfully parsed JSON');
+    return parsed;
   } catch (error) {
     console.error('Error reading setlists:', error);
     return { setlists: {} };
@@ -88,13 +100,20 @@ async function readSetlists() {
 
 export async function GET() {
   try {
+    console.log('Current working directory:', process.cwd());
+    console.log('Setlists path:', setlistsPath);
+    
     await ensureDataDirectory();
     await initializeSetlistsFile();
+    
+    console.log('About to read setlists file');
     const data = await readSetlists();
+    console.log('Successfully read setlists:', Object.keys(data.setlists || {}).length);
+    
     return NextResponse.json(data);
   } catch (error) {
-    console.error('Error reading setlists:', error);
-    return NextResponse.json({ setlists: {} });
+    console.error('Error in GET route:', error);
+    return NextResponse.json({ setlists: {}, error: error.message });
   }
 }
 
