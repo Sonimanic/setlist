@@ -2086,30 +2086,30 @@ export default function Home() {
                       return (
                         <div
                           key={song.id}
-                          className={`flex items-center justify-between p-3 bg-black hover:bg-gray-900 rounded-md border border-white/10 ${isInSetlist ? 'opacity-50' : ''}`}
+                          className={`flex items-center justify-between p-4 bg-black hover:bg-gray-900 rounded-md border border-white/10 ${isInSetlist ? 'opacity-50' : ''}`}
                         >
                           <div className="flex flex-col">
-                            <span className="font-medium text-white">{song.name}</span>
+                            <span className="text-2xl font-medium text-white">{song.name}</span>
                             <span className="text-sm text-gray-400">{song.artist}</span>
                           </div>
                           <div className="flex items-center gap-2">
                             <button
-                              onClick={() => {
-                                setSongToEdit(song);
-                                setShowEditForm(true);
-                              }}
-                              className="p-2 hover:bg-gray-800 rounded-md text-blue-400 hover:text-blue-300"
+                              onClick={() => !isInSetlist && addToSetlist(song)}
+                              className={`p-2 hover:bg-gray-800 rounded-md ${isInSetlist ? 'text-green-400' : 'text-gray-400 hover:text-green-300'}`}
+                              disabled={isInSetlist}
                             >
-                              <Edit className="h-6 w-6 text-white" />
+                              {isInSetlist ? (
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" className="h-6 w-6">
+                                  <circle cx="12" cy="12" r="10" className="stroke-current" fill="none" />
+                                  <path d="M8 12l3 3 6-6" className="stroke-current" strokeWidth="2" />
+                                </svg>
+                              ) : (
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" className="h-6 w-6">
+                                  <circle cx="12" cy="12" r="10" className="stroke-current" fill="none" />
+                                  <path d="M12 8v8M8 12h8" className="stroke-current" strokeWidth="2" />
+                                </svg>
+                              )}
                             </button>
-                            {!isInSetlist && (
-                              <button
-                                onClick={() => addToSetlist(song)}
-                                className="p-2 hover:bg-gray-800 rounded-md text-green-400 hover:text-green-300"
-                              >
-                                <Plus className="h-6 w-6 text-white" />
-                              </button>
-                            )}
                             <button
                               onClick={() => handleDeleteClick(song)}
                               className="p-2 hover:bg-gray-800 rounded-md text-red-400 hover:text-red-300"
