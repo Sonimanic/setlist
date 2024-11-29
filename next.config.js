@@ -21,6 +21,13 @@ const nextConfig = {
   experimental: {
     optimizeCss: false,
     optimizePackageImports: [],
+    outputFileTracingRoot: __dirname,
+    outputFileTracingExcludes: {
+      '*': [
+        'node_modules/**/*',
+        'data/backups/**/*',
+      ],
+    },
   },
   webpack: (config, { isServer }) => {
     // Ignore backup files and large directories
@@ -36,7 +43,7 @@ const nextConfig = {
 
     // Reduce the impact of source maps
     if (!isServer) {
-      config.devtool = false;
+      config.devtool = process.env.NODE_ENV === 'production' ? false : 'eval-source-map';
     }
 
     // Optimize build performance
@@ -68,17 +75,6 @@ const nextConfig = {
     }
 
     return config;
-  },
-  // Reduce the number of files being traced
-  experimental: {
-    ...nextConfig.experimental,
-    outputFileTracingRoot: __dirname,
-    outputFileTracingExcludes: {
-      '*': [
-        'node_modules/**/*',
-        'data/backups/**/*',
-      ],
-    },
   },
 };
 

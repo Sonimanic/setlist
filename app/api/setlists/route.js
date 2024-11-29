@@ -15,6 +15,24 @@ async function ensureBackupDirectory() {
   }
 }
 
+// Clean up old backups, keeping only the most recent ones
+async function cleanupOldBackups(maxBackups = 30) {
+  try {
+    const files = await fs.readdir(backupDir);
+    const backupFiles = files.filter(file => file.startsWith('setlists-') && file.endsWith('.json'));
+    
+    // Sort files by creation time (newest first)
+    const sortedFiles = backupFiles.sort().reverse();
+    
+    // Remove files beyond the maximum count
+    for (const file of sortedFiles.slice(maxBackups)) {
+      await fs.unlink(path.join(backupDir, file));
+    }
+  } catch (error) {
+    console.error('Error cleaning up old backups:', error);
+  }
+}
+
 // Create a backup of the setlists file
 async function createBackup() {
   try {
@@ -28,6 +46,7 @@ async function createBackup() {
       const data = JSON.parse(content);
       if (Object.keys(data.setlists || {}).length > 0) {
         await fs.writeFile(backupPath, content);
+        await cleanupOldBackups(); // Clean up after creating new backup
       }
     } catch (error) {
       console.error('Error reading existing setlists for backup:', error);
