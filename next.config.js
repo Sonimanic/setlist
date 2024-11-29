@@ -21,7 +21,6 @@ const nextConfig = {
   // Ensure data files are included in the build
   experimental: {
     serverComponentsExternalPackages: ['sharp'],
-    outputFileTracing: true,
   },
   // Add headers for CORS
   async headers() {

@@ -325,18 +325,12 @@ export default function Home() {
           setCurrentPlaylistName('Untitled Setlist');
         }
       } catch (error) {
-        console.error('Error loading setlists and last used setlist:', error);
-        setNotification({
-          title: 'Error',
-          message: 'Failed to load setlist: ' + error.message,
-          variant: 'error'
-        });
-        setTimeout(() => setNotification(null), 3000);
+        console.error('Error loading setlists:', error);
       }
     };
 
     loadSetlistsAndLastUsed();
-  }, []);
+  }, [lastUpdateTime]); // Only reload when lastUpdateTime changes
 
   // Save setlist changes
   const saveSetlist = async (newSetlist) => {

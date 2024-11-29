@@ -79,24 +79,10 @@ async function initializeSetlistsFile() {
 // Read current setlists with detailed error logging
 async function readSetlists() {
   try {
-    console.log('Current working directory:', process.cwd());
-    console.log('Data directory:', DATA_DIR);
-    console.log('Setlists path:', setlistsPath);
-    
-    // List contents of data directory
-    try {
-      const files = await fs.readdir(DATA_DIR);
-      console.log('Files in data directory:', files);
-    } catch (error) {
-      console.error('Error reading data directory:', error);
-    }
-
     // Check if file exists
     const exists = await fs.access(setlistsPath).then(() => true).catch(() => false);
-    console.log('Setlists file exists:', exists);
     
     if (!exists) {
-      console.log('Creating empty setlists file');
       await fs.writeFile(setlistsPath, JSON.stringify({ setlists: {} }, null, 2));
       return { setlists: {} };
     }
@@ -104,9 +90,7 @@ async function readSetlists() {
     // Read and parse file
     try {
       const data = await fs.readFile(setlistsPath, 'utf8');
-      console.log('Raw data length:', data.length);
       const parsed = JSON.parse(data);
-      console.log('Successfully parsed JSON, keys:', Object.keys(parsed));
       return parsed;
     } catch (error) {
       console.error('Error reading/parsing setlists file:', error);
@@ -138,9 +122,7 @@ export async function GET() {
       'Access-Control-Allow-Headers': 'Content-Type, Authorization',
     };
 
-    console.log('GET request received');
     const data = await readSetlists();
-    console.log('Successfully read setlists');
     
     return new NextResponse(JSON.stringify(data), {
       status: 200,
