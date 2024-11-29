@@ -1,0 +1,17 @@
+{
+  "playlists": {
+    "1732598969472": {
+      "id": "1732598969472",
+      "name": "The BOB",
+      "setlist": [
+        {
+          "type": "break",
+          "setlistId": "break-1732598969472",
+          "id": "break-1732598969472",
+          "name": "Set 1"
+        }
+      ],
+      "updated": "2024-11-26T05:29:46.386Z"
+    }
+  }
+}

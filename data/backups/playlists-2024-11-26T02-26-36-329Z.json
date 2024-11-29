@@ -1,0 +1,470 @@
+{
+  "playlists": {
+    "fbcd6e6dbb3943fd65d56539a1b3955d": {
+      "name": "Shots",
+      "setlist": [],
+      "created": "2024-11-25T02:21:46.788Z",
+      "updated": "2024-11-26T01:03:21.179Z"
+    },
+    "c5ea00e503d80a58aac27cd5b4e2093f": {
+      "name": "The Deck",
+      "setlist": [
+        {
+          "type": "break",
+          "setlistId": "break-1732582173014",
+          "id": "break-1732582173014",
+          "name": "Set 1"
+        },
+        {
+          "name": "8 days a week",
+          "artist": "Beatles",
+          "key": "A",
+          "tempo": 138,
+          "duration": 164,
+          "lyrics": "<p>Ooh I need your love babe,<br />Guess you know it's true.<br />Hope you need my love babe,<br />Just like I need you.</p>\n<p>Hold me, love me, hold me, love me.<br />Ain't got nothin' but love babe,<br />Eight days a week.</p>\n<p>Love you ev'ry day girl,<br />Always on my mind.<br />One thing I can say girl,<br />Love you all the time.</p>\n<p>Hold me, love me, hold me, love me.<br />Ain't got nothin' but love girl,<br />Eight days a week.</p>\n<p>Eight days a week<br />I love you.<br />Eight days a week<br />Is not enough to show I care.</p>\n<p>Ooh I need your love babe,<br />Guess you know it's true.<br />Hope you need my love babe,<br />Just like I need you.</p>\n<p>Hold me, love me, hold me, love me.<br />Ain't got nothin' but love babe,<br />Eight days a week.</p>\n<p>Eight days a week<br />I love you.<br />Eight days a week<br />Is not enough to show I care.</p>\n<p>Love you ev'ry day girl,<br />Always on my mind.<br />One thing I can say girl,<br />Love you all the time.</p>\n<p>Hold me, love me, hold me, love me.<br />Ain't got nothin' but love babe,<br />Eight days a week. Eight days a week. Eight days a week.</p>",
+          "chords": "",
+          "added": "2023-11-12 20:48:57",
+          "date_updated": "2023-11-13 02:01:49",
+          "id": "ikN6ne",
+          "setlistId": "ikN6ne-1732582160378"
+        },
+        {
+          "type": "break",
+          "setlistId": "break-1732582167284",
+          "id": "break-1732582167284",
+          "name": "Set 2"
+        },
+        {
+          "name": "5 o'clock somewhere",
+          "artist": "Alan Jackson Jimmy Bufett",
+          "key": "D",
+          "tempo": 125,
+          "duration": 247,
+          "lyrics": "",
+          "chords": "",
+          "added": "2019-09-10 16:31:23",
+          "date_updated": "2019-09-10 21:31:23",
+          "tempo_subdivision": "0",
+          "id": "gwhMMX",
+          "setlistId": "gwhMMX-1732582159154"
+        },
+        {
+          "name": "1985",
+          "artist": "Bowling for soup",
+          "key": "B",
+          "pitch": "11",
+          "tempo": 120,
+          "tempo_subdivision": "0",
+          "duration": 195,
+          "lyrics": "<p><strong>1985</strong></p>\n<p>Woohoo<br />\nWoohoo<br />\nDebbie just hit the wall<br />\nShe never had it all<br />\nOne Prozac a day<br />\nHusbands a CPA<br />\nHer dreams went out the door<br />\nWhen she turned twenty four<br />\nOnly been with one man<br />\nWhat happened to her plan?She was gonna be an actress<br />\nShe was gonna be a star<br />\nShe was gonna shake her ass<br />\nOn the hood of White Snake's car<br />\nHer yellow SUV, is now the enemy<br />\nLooks at her average life<br />\nAnd nothing has been alrightSince Bruce Springsteen, Madonna<br />\nWay before Nirvana<br />\nThere was U2 and Blondie<br />\nAnd music still on M-T-V<br />\nHer two kids in high school<br />\nThey tell her that she's uncool<br />\n'Cause she's still preoccupied<br />\nWith 19, 19, 1985Woohoo<br />\n(1985)<br />\nWoohooShe's seen all the classics<br />\nShe knows every line<br />\nBreakfast Club, Pretty In Pink<br />\nEven Saint Elmo's Fire<br />\nShe rocked out to Wham!<br />\nNot a big Limp Bizkit fan<br />\nThought she'd get a hand<br />\nOn a member of Duran DuranWhere's the mini-skirt made of snake skin<br />\nAnd who's the other guy singing in Van Halen<br />\nWhen did reality become T.V.<br />\nWhat ever happened to sitcoms, game shows<br />\n(On the radio was)Bruce Springsteen, Madonna<br />\nWay before Nirvana<br />\nThere was U2 and Blondie<br />\nAnd music still on M-T-V<br />\nHer two kids in high school<br />\nThey tell her that she's uncool<br />\n'Cause she's still preoccupied<br />\nWith 19, 19, 1985WoohooShe hates time make it stop<br />\nWhen did Motley Crue become classic rock?<br />\nAnd when did Ozzy become an actor?<br />\nPlease make this<br />\nStop! Stop! Stop!<br />\nAnd bring backSpringsteen, Madonna<br />\nWay before Nirvana<br />\nThere was U2 and Blondie<br />\nAnd music still on M-T-V<br />\nHer two kids in high school<br />\nThey tell her that she's uncool<br />\n'Cause she's still preoccupied<br />\n1985Bruce Springsteen, Madonna<br />\nWay before Nirvana<br />\nThere was U2 and Blondie<br />\nAnd music still on M-T-V<br />\nHer two kids in high school<br />\nThey tell her that she's uncool<br />\nBut she's still preoccupied<br />\nWith 19, 19, 1985</p>",
+          "chords": "",
+          "added": "2018-10-21 00:16:23",
+          "date_updated": "2018-11-03 05:44:02",
+          "id": "Qcgl2S",
+          "setlistId": "Qcgl2S-1732582158354"
+        }
+      ],
+      "created": "2024-11-25T02:43:14.509Z",
+      "updated": "2024-11-26T01:03:21.180Z"
+    },
+    "869352a5da003fbb866aee0eaa6de7a7": {
+      "name": "The BOB",
+      "setlist": [
+        {
+          "id": "LulFYq",
+          "name": "Shots",
+          "artist": "Dumm",
+          "key": "de",
+          "tempo": 44,
+          "duration": 213,
+          "lyrics": "These are words",
+          "created": "2024-11-26T02:00:53.636Z",
+          "updated": "2024-11-26T02:00:53.636Z",
+          "tempo_subdivision": "0",
+          "setlistId": "LulFYq-1732586518022"
+        },
+        {
+          "type": "break",
+          "setlistId": "break-1732521088561",
+          "id": "break-1732521088561",
+          "name": "Set 1"
+        },
+        {
+          "name": "Boogie shoes",
+          "artist": "KC & The Sunshine Band",
+          "key": "E",
+          "pitch": "0",
+          "tempo": 120,
+          "tempo_subdivision": "0",
+          "duration": 0,
+          "lyrics": "<p>Girl, to be with you is my favorite thing<br />Yeah, uh huh, yeah<br />I can't wait till I see you again<br />Yeah, yeah, uh huh, uh huh</p>\n<p>I want to put on my my my my my boogie shoes<br />Just to boogie with you, yeah<br />I want to put on my my my my my boogie shoes<br />Just to boogie with you, uh huh</p>\n<p>I want to do it till the sun comes up<br />Oh yeah, uh huh, uh huh<br />I want to do it till I can't get enough<br />Yeah, yeah, uh huh</p>\n<p>I want to put on my my my my my boogie shoes<br />Just to boogie with you, well<br />I want to put on my my my my my boogie shoes<br />Just to boogie with you, woo!</p>\n<p>Oh yeah...<br />Woo! I want to put on my my my my my boogie shoes<br />Just to boogie with you, yeah<br />I want to put on my my my my my boogie shoes<br />Just to boogie with you, yeah<br />I want to put on my my my my my boogie shoes<br />Just to boogie with you, yeah<br />I want to put on my my my my my boogie shoes<br />Just to boogie with you, yeah<br />I want to put on my my my my my boogie shoes<br />Just to boogie with you, yeah</p>",
+          "chords": "",
+          "added": "2020-01-02 12:45:54",
+          "date_updated": "2020-01-02 17:45:54",
+          "id": "RHjpj4",
+          "setlistId": "RHjpj4-1732584019612"
+        },
+        {
+          "id": "P_kDyo",
+          "name": "Words are easy",
+          "artist": "Me",
+          "key": "e",
+          "tempo": 444,
+          "duration": 142,
+          "lyrics": "cool!",
+          "created": "2024-11-26T00:57:17.696Z",
+          "updated": "2024-11-26T00:57:17.696Z",
+          "tempo_subdivision": "0",
+          "setlistId": "P_kDyo-1732582968698"
+        },
+        {
+          "name": "Gold on the ceiling",
+          "artist": "Black Keys",
+          "key": "G",
+          "tempo": 65,
+          "tempo_subdivision": "0",
+          "duration": 224,
+          "lyrics": "<p>Down in the waves<br />She screams again<br />Roar at the door<br />My mind can't take much more</p>\n<p>I could never drown in</p>\n<p>They wanna get my<br />They wanna get my gold on the ceiling<br />I ain't blind, just a matter of time<br />Before you steal it<br />It's all right, ain't no guarding my high</p>\n<p>Clouds covered love's<br />Barb-wired snare<br />Strung up, strung out<br />I just can't go without</p>\n<p>I could never drown in</p>\n<p>They wanna get my<br />They wanna get my gold on the ceiling<br />I ain't blind, just a matter of time<br />Before you steal it<br />It's all right, ain't no guarding my high<br />They wanna get my<br />They wanna get my<br />Gold on the ceiling<br />I ain't blind, just a matter of time<br />Before you steal it<br />It's all right, ain't no guarding my high</p>",
+          "chords": "",
+          "added": "2024-09-11 13:42:20",
+          "date_updated": "2024-09-11 17:42:20",
+          "id": "kKKc7b",
+          "setlistId": "kKKc7b-1732522675076"
+        },
+        {
+          "name": "Folsom Prison Blues",
+          "artist": "Johnny Cash",
+          "key": "E",
+          "tempo": 110,
+          "tempo_subdivision": "0",
+          "duration": 173,
+          "lyrics": "",
+          "chords": "",
+          "added": "2019-09-09 13:34:12",
+          "date_updated": "2022-02-04 01:37:37",
+          "id": "vZkhh0",
+          "setlistId": "vZkhh0-1732522670071"
+        },
+        {
+          "type": "break",
+          "setlistId": "break-1732584574128",
+          "id": "break-1732584574128",
+          "name": "Set 2"
+        },
+        {
+          "name": "Don't bring me down",
+          "artist": "ELO",
+          "key": "A",
+          "tempo": 116,
+          "tempo_subdivision": "0",
+          "duration": 243,
+          "lyrics": "<p>You got me runnin' goin' out of my mind<br />You got me thinkin' that I'm wastin' my time<br />(Don't bring me down, no no no no no)<br />I'll tell you once more before I get off the floor<br />(Don't bring me down)</p>\n<p>You wanna stay out with your fancy friends<br />I'm tellin' you it's got to be the end<br />(Don't bring me down, no no no no no)<br />I'll tell you once more before I get off the floor<br />(Don't bring me down)</p>\n<p>Don't bring me down, groos<br />Don't bring me down, groos<br />Don't bring me down, groos<br />Don't bring me down</p>\n<p>What happened to the girl I used to know?<br />You let your mind out somewhere down the road<br />(Don't bring me down, no no no no no)<br />I'll tell you once more before I get off the floor<br />(Don't bring me down)</p>\n<p></p>\n<p>You're always talkin' 'bout your crazy nights<br />One of these days you're gonna get it right<br />(Don't bring me down, no no no no no no no)<br />I'll tell you once more before I get off the floor<br />(Don't bring me down)</p>\n<p>Don't bring me down, groos<br />Don't bring me down, groos<br />Don't bring me down, groos<br />Don't bring me down</p>\n<p>You're lookin' good just like a snake in the grass<br />One of these days you're gonna break your glass<br />(Don't bring me down, no no no no no no no)<br />I'll tell you once more before I get off the floor<br />(Don't bring me down)</p>\n<p>You got me shakin' got me runnin' away<br />You got me crawlin' up to you everyday<br />(Don't bring me down, no no no no no)<br />I'll tell you once more before I get off the floor<br />(Don't bring me down)</p>\n<p>I'll tell you once more before I get off the floor<br />(Don't bring me down)</p>",
+          "chords": "",
+          "added": "2020-03-19 22:53:09",
+          "date_updated": "2020-07-14 18:01:22",
+          "id": "2MwfGz",
+          "setlistId": "2MwfGz-1732522653903"
+        },
+        {
+          "name": "Fight for your right to party",
+          "artist": "Beastie Boys",
+          "key": "G#m",
+          "pitch": "8",
+          "tempo": 133,
+          "tempo_subdivision": "0",
+          "duration": 210,
+          "lyrics": "<p>Kick it</p>\n<p>You wake up late for school, man you don't want to go<br />You ask you mom, please? but she still says, no<br />You missed two classes, and no homework<br />But your teacher preaches class like you're some kind of jerk</p>\n<p>You gotta fight for your right to party</p>\n<p>Your pops caught you smoking, and he says, \"No way\"<br />That hypocrite smokes two packs a day<br />Man, living at home is such a drag<br />Now your mom threw away your best porno mag (bust it)</p>\n<p>You gotta fight for your right to party</p>\n<p>You gotta fight</p>\n<p>Don't step out of this house if that's the clothes you're gonna wear<br />I'll kick you out of my home if you don't cut that hair<br />Your mom busted in and said, what's that noise?<br />Aw, mom you're just jealous it's the Beastie Boys</p>\n<p>You gotta fight for your right to party<br />You gotta fight for your right to party</p>\n<p>Party<br />Party</p>\n<p></p>",
+          "chords": "",
+          "added": "2018-10-23 19:43:13",
+          "date_updated": "2024-09-05 17:40:48",
+          "id": "Pn89Np",
+          "setlistId": "Pn89Np-1732522666895"
+        },
+        {
+          "name": "Everybody talks (E)",
+          "artist": "Neon Trees",
+          "key": "(E)",
+          "tempo": 155,
+          "duration": 180,
+          "lyrics": "<p>Hey baby, won't you look my way?<br />I can be your new addiction<br />Hey baby, what you gotta say?<br />All you're giving me is fiction<br />I'm a sorry sucker and this happens all the time<br />I found out that everybody talks<br />Everybody talks, everybody talks</p>\n<p>[ <br />It started with a whisper<br />And that was when I kissed her<br />And then she made my lips hurt<br />I could hear the chit chat<br />Take me to your love shack<br />Mama's always gotta back track<br />When everybody talks back <br />]</p>\n<p>Hey honey, you could be my drug<br />You could be my new prescription<br />Too much could be an overdose<br />All this trash talk make me itchin'<br />Oh my, my shit<br />Everybody talks, everybody talks<br />Everybody talks, too much</p>\n<p>[Chorus]</p>\n<p>Never thought I'd live<br />To see the day<br />When everybody's words got in the way</p>\n<p>Hey</p>\n<p>Hey sugar, show me all your love<br />All you're giving me is friction<br />Hey sugar, what you gotta say?</p>\n<p>[Chorus]</p>\n<p>Everybody talks<br />Everybody talks<br />Everybody talks<br />Everybody talks<br />Everybody talks<br />Everybody talks, back</p>\n<p>It started with a whisper (everybody talks, everybody talks)<br />And that was when I kissed her (everybody talks, everybody talks)</p>\n<p>Everybody talks<br />Everybody talks, back</p>",
+          "chords": "",
+          "added": "2022-07-06 10:32:14",
+          "date_updated": "2022-09-10 16:45:15",
+          "id": "Wgrdlf",
+          "setlistId": "Wgrdlf-1732522662574"
+        },
+        {
+          "type": "break",
+          "setlistId": "break-1732584580946",
+          "id": "break-1732584580946",
+          "name": "Set 3"
+        },
+        {
+          "name": "Get lucky (Bm D F#m E)",
+          "artist": "Daft Punk",
+          "key": "F#m",
+          "tempo": 116,
+          "duration": 370,
+          "lyrics": "<p>Like the legend of the phoenix, huh<br />All ends with beginnings<br />What keeps the planet spinning, ah<br />The force from the beginning, hm, look</p>\n<p>We've come too far<br />To give up who we are<br />So let's raise the bar<br />And our cups to the stars</p>\n<p>She's up all night 'til the sun<br />I'm up all night to get some<br />She's up all night for good fun<br />I'm up all night to get lucky<br />We're up all night 'til the sun<br />We're up all night to get some<br />We're up all night for good fun<br />We're up all night to get lucky</p>\n<p>We're up all night to get lucky<br />We're up all night to get lucky<br />We're up all night to get lucky<br />We're up all night to get lucky</p>\n<p>The present has no ribbon<br />Your gift keeps on giving<br />What is this I'm feeling?<br />If you wanna leave I'm with it, ah</p>\n<p>We've come too far<br />To give up who we are<br />So let's raise the bar<br />And our cups to the stars</p>\n<p>She's up all night 'til the sun<br />I'm up all night to get some<br />She's up all night for good fun<br />I'm up all night to get lucky<br />We're up all night 'til the sun<br />We're up all night to get some<br />We're up all night for good fun<br />We're up all night to get lucky</p>\n<p>We're up all night to get lucky<br />We're up all night to get lucky<br />We're up all night to get lucky<br />We're up all night to get lucky</p>\n<p>She's up all night 'til the sun<br />I'm up all night to get some<br />She's up all night for good fun<br />I'm up all night to get lucky<br />We're up all night 'til the sun<br />We're up all night to get some<br />We're up all night for good fun<br />We're up all night to get lucky</p>\n<p>We're up all night to get lucky<br />We're up all night to get lucky<br />We're up all night to get lucky<br />We're up all night to get lucky</p>\n<p>We're up all night to get-<br />We're up all night to get-<br />We're up all night to get-<br />We're up all night to get<br />We're up all night to get-<br />We're up all night to get-<br />We're up all night to get-<br />We're up all night to get-</p>\n<p>We're up all night to get- (together)<br />We're up all night to get (let's get funked again)<br />We're up all night to get funky<br />We're up all night to get lucky<br />We're up all night to get lucky<br />We're up all night to get lucky<br />We're up all night to get lucky</p>\n<p>We're up all night to get lucky<br />We're up all night to get lucky<br />We're up all night to get lucky<br />We're up all night to get lucky<br />We're up all night to get lucky</p>\n<p>We've come too far<br />To give up who we are<br />So let's raise the bar<br />And our cups to the stars</p>\n<p>She's up all night 'til the sun<br />I'm up all night to get some<br />She's up all night for good fun<br />I'm up all night to get lucky<br />We're up all night 'til the sun<br />We're up all night to get some<br />We're up all night for good fun<br />We're up all night to get lucky</p>\n<p>We're up all night to get lucky<br />We're up all night to get lucky<br />We're up all night to get lucky<br />We're up all night to get lucky</p>\n<p>We're up all night to get lucky<br />We're up all night to get lucky<br />We're up all night to get lucky<br />We're up all night to get lucky</p>\n<p>We're up all night to get lucky<br />We're up all night to get lucky<br />We're up all night to get lucky<br />We're up all night to get lucky</p>\n<p>We're up all night to get lucky<br />We're up all night to get lucky<br />We're up all night to get lucky<br />We're up all night to get lucky</p>\n<p></p>",
+          "chords": "",
+          "added": "2023-09-14 11:52:15",
+          "date_updated": "2024-09-17 19:46:29",
+          "id": "hCWpEs",
+          "setlistId": "hCWpEs-1732522575546"
+        },
+        {
+          "name": "Hey Jealousy",
+          "artist": "Gin Blossoms",
+          "key": "F♯/G♭",
+          "tempo": 135,
+          "duration": 236,
+          "lyrics": "",
+          "chords": "",
+          "added": "2023-03-11 09:16:37",
+          "date_updated": "2023-03-11 14:16:37",
+          "id": "gH7H3h",
+          "setlistId": "gH7H3h-1732522680510"
+        },
+        {
+          "name": "Forget You (C Dm F)",
+          "artist": "Ceelo Green",
+          "key": "C",
+          "tempo": 128,
+          "tempo_subdivision": "0",
+          "duration": 223,
+          "lyrics": "",
+          "chords": "",
+          "added": "2018-10-20 22:46:34",
+          "date_updated": "2024-09-26 21:36:07",
+          "id": "rN3sKq",
+          "setlistId": "rN3sKq-1732522567041"
+        },
+        {
+          "type": "break",
+          "setlistId": "break-1732584585601",
+          "id": "break-1732584585601",
+          "name": "Set 4"
+        },
+        {
+          "name": "Flowers",
+          "artist": "Miley Cyrus",
+          "key": "C (Am Dm G C) F Em7",
+          "tempo": 118,
+          "tempo_subdivision": "0",
+          "duration": 200,
+          "lyrics": "(Am Dm G C)  (E Em9) (F)<br>We were good, we were gold<br>Kinda dream that can't be sold<br>We were right 'til we weren't<br>Built a home and watched it burn<br><br>Mm, I didn't wanna leave you<br>I didn't wanna lie<br>Started to cry, but then remembered I<br><br>I can buy myself flowers<br>Write my name in the sand<br>Talk to myself for hours<br>Say things you don't understand<br>I can take myself dancing<br>And I can hold my own hand<br>Yeah, I can love me better than you can<br><br>Can love me better<br>I can love me better, baby<br>Can love me better<br>I can love me better, baby<br><br>Paint my nails cherry red<br>Match the roses that you left<br>No remorse, no regret<br>I forgive every word you said<br><br>Ooh, I didn't want to leave you, baby<br>I didn't wanna fight<br>Started to cry, but then remembered I<br><br>I can buy myself flowers<br>Write my name in the sand<br>Talk to myself for hours, yeah<br>Say things you don't understand<br>I can take myself dancing, yeah<br>I can hold my own hand<br>Yeah, I can love me better than you can<br><br>Can love me better<br>I can love me better, baby<br>Can love me better<br>I can love me better, baby<br>Can love me better<br>I can love me better, baby<br>Can love me better<br>Oh, I<br><br>I didn't want to leave you<br>I didn't wanna fight<br>Started to cry, but then remembered I<br><br>I can buy myself flowers (oh)<br>Write my name in the sand (mm)<br>Talk to myself for hours (yeah)<br>Say things you don't understand (never will)<br>I can take myself dancing, yeah<br>I can hold my own hand<br>Yeah, I can love me better than<br>Yeah, I can love me better than you can<br><br>Can love me better<br>I can love me better, baby (oh)<br>Can love me better<br>I can love me better (than you can), baby<br>Can love me better<br>I can love me better, baby<br>Can love me better",
+          "id": "d6p51g",
+          "setlistId": "d6p51g-1732522562656"
+        },
+        {
+          "name": "Crazy little thing called love",
+          "artist": "Queen",
+          "key": "D",
+          "tempo": 154,
+          "tempo_subdivision": "0",
+          "duration": 163,
+          "lyrics": "",
+          "chords": "",
+          "added": "2018-11-12 11:05:49",
+          "date_updated": "2020-10-20 04:22:58",
+          "id": "JFW4jY",
+          "setlistId": "JFW4jY-1732521577748"
+        },
+        {
+          "name": "Brick house",
+          "artist": "Commodores",
+          "key": "Am",
+          "tempo": 109,
+          "tempo_subdivision": "0",
+          "duration": 211,
+          "lyrics": "",
+          "chords": "",
+          "added": "2018-10-20 23:41:57",
+          "date_updated": "2020-10-19 18:00:14",
+          "id": "rhrwTw",
+          "setlistId": "rhrwTw-1732521569571"
+        },
+        {
+          "name": "Cake by the ocean",
+          "artist": "DNCE",
+          "key": "Em",
+          "tempo": 119,
+          "duration": 219,
+          "lyrics": "<p>Oh no<br />See you walking 'round like it's a funeral<br />Not so serious, girl; why those feet cold?<br />We just getting started; don't you tip toe, tip toe</p>\n<p>Ah!<br />(Ahh)<br />Waste time with a masterpiece, don't waste time with a masterpiece (huh!)<br />You should be rolling with me, you should be rolling with me (ah)<br />You're a real life fantasy, you're a real life fantasy (huh!)<br />But you're moving so carefully; let's start living dangerously</p>\n<p>Talk to me, baby<br />I'm going blind from this sweet, sweet craving, whoa<br />[Explicit:] Let's lose our minds and go fucking crazy<br />[Clean and radio:] Let's lose our minds and go crazy crazy<br />Ah ya ya ya ya I keep on hoping we'll eat cake by the ocean<br />Walk for me, baby<br />I'll be Diddy, you'll be Naomi, whoa<br />[Explicit:] Let's lose our minds and go fucking crazy<br />[Clean and radio:] Let's lose our minds and go crazy crazy<br />Ah ya ya ya ya I keep on hoping we'll eat cake by the ocean (huh)</p>\n<p>[Explicit:] God damn<br />[Clean and radio:] Hot damn<br />See you licking frosting from your own hands<br />Want another taste, I'm begging, \"Yes, ma'am.\"<br />I'm tired of all this candy on the dry land, dry land, oh</p>\n<p>Waste time with a masterpiece, don't waste time with a masterpiece (huh!)<br />You should be rolling with me, you should be rolling with me (ah)<br />You're a real life fantasy, you're a real life fantasy (huh!)<br />But you're moving so carefully; let's start living dangerously<br />Whoa</p>\n<p>Talk to me, baby<br />I'm going blind from this sweet, sweet craving, whoa<br />[Explicit:] Let's lose our minds and go fucking crazy<br />[Clean and radio:] Let's lose our minds and go crazy crazy<br />Ah ya ya ya ya I keep on hoping we'll eat cake by the ocean<br />Walk for me, baby (walk for me now)<br />I'll be Diddy, you'll be Naomi, whoa<br />[Explicit:] Let's lose our minds and go fucking crazy<br />[Clean and radio:] Let's lose our minds and go crazy crazy<br />Ah ya ya ya ya I keep on hoping we'll eat cake by the ocean<br />Oh ah<br />Ah ya ya ya ya I keep on hoping we'll eat cake by the ocean<br />Oh ah<br />Ah ya ya ya ya I keep on hoping we'll eat cake by the ocean (huh)</p>\n<p>[Explicit:] You're fucking delicious<br />[Clean and radio:] You're crazy delicious<br />Talk to me, girl</p>\n<p>Talk to me, baby<br />I'm going blind from this sweet, sweet craving, whoa<br />[Explicit:] Let's lose our minds and go fucking crazy<br />[Clean and radio:] Let's lose our minds and go crazy crazy<br />Ah ya ya ya ya I keep on hoping we'll eat cake by the ocean<br />Walk for me, baby (walk for me now)<br />I'll be Diddy, you'll be Naomi, whoa<br />[Explicit:] Let's lose our minds and go fucking crazy<br />[Clean and radio:] Let's lose our minds and go crazy crazy<br />Ah ya ya ya ya I keep on hoping we'll eat cake by the ocean (huh)</p>\n<p>Red velvet, vanilla, chocolate in my life<br />Funfetti, I'm ready; I need it every night<br />Red velvet, vanilla, chocolate in my life<br />Ah ya ya ya ya I keep on hoping we'll eat cake by the ocean (huh)</p>",
+          "chords": "",
+          "added": "2023-09-14 11:57:50",
+          "date_updated": "2023-09-14 15:57:50",
+          "id": "f11inq",
+          "setlistId": "f11inq-1732521568051"
+        },
+        {
+          "name": "Blister in the sun",
+          "artist": "Violent Femmes",
+          "key": "G",
+          "tempo": 97,
+          "tempo_subdivision": "0",
+          "duration": 147,
+          "lyrics": "",
+          "chords": "",
+          "added": "2018-10-21 00:07:32",
+          "date_updated": "2018-11-03 05:21:05",
+          "id": "GPybC0",
+          "setlistId": "GPybC0-1732521550978"
+        },
+        {
+          "name": "Basket case",
+          "artist": "Green Day",
+          "key": "Eb",
+          "tempo": 175,
+          "tempo_subdivision": "0",
+          "duration": 182,
+          "lyrics": "",
+          "chords": "",
+          "added": "2018-10-23 19:31:01",
+          "date_updated": "2020-09-17 17:11:39",
+          "id": "55GyTl",
+          "setlistId": "55GyTl-1732521546448"
+        },
+        {
+          "name": "Are you gonna be my girl",
+          "artist": "Jet",
+          "key": "D",
+          "tempo": 105,
+          "duration": 215,
+          "lyrics": "<p>Go!</p>\n<p>So one, two, three, take my hand and come with me<br />Because you look so fine<br />That I really wanna make you mine</p>\n<p>I say you look so fine<br />That I really wanna make you mine</p>\n<p>Oh, four, five, six c'mon and get your kicks<br />Now you don't need that money<br />When you look like that, do ya</p>\n<p>Big black boots<br />Long blonde hair<br />She's so sweet<br />With her get back stare</p>\n<p>Well I could see<br />You home with me<br />But you were with another man, yeah!<br />I know we<br />Ain't got much to say<br />Before I let you get away, yeah!<br />I said, are you gonna be my girl?</p>\n<p>Well, so one, two, three, take my hand and come with me<br />Because you look so fine<br />That I really wanna make you mine</p>\n<p>I say you look so fine<br />That I really wanna make you mine</p>\n<p>Oh, four, five, six c'mon and get your kicks<br />Now you don't need that money<br />With a face like that, do ya</p>\n<p>Big black boots<br />Long brown hair<br />She's so sweet<br />With her get back stare</p>\n<p>Well I could see<br />You home with me<br />But you were with another man, yeah!<br />I know we,<br />Ain't got much to say<br />Before I let you get away, yeah!<br />I said, are you gonna be my girl?</p>\n<p>Oh yeah, oh yeah, c'mon!</p>\n<p>I could see<br />You home with me<br />But you were with another man, yeah!<br />I know we<br />Ain't got much to say<br />Before I let you get away, yeah!<br />Uh, be my girl<br />Be my girl<br />Are you gonna be my girl?<br />Yeah</p>",
+          "chords": "",
+          "added": "2023-08-22 14:28:18",
+          "date_updated": "2023-09-14 16:05:47",
+          "id": "i5EzNZ",
+          "setlistId": "i5EzNZ-1732521543902"
+        },
+        {
+          "name": "Achy Breaky Heart",
+          "artist": "Billy Ray Cyrus",
+          "key": "A maj",
+          "tempo": 122,
+          "duration": 204,
+          "lyrics": "",
+          "chords": "",
+          "added": "2020-09-08 15:46:08",
+          "date_updated": "2020-09-17 19:06:25",
+          "id": "TXPTlW",
+          "setlistId": "TXPTlW-1732520055402"
+        },
+        {
+          "name": "American Girl",
+          "artist": "Tom Petty",
+          "key": "D",
+          "tempo": 132,
+          "tempo_subdivision": "0",
+          "duration": 290,
+          "lyrics": "<p><span>Ooh, my little pretty one, my pretty one</span><br /><span>When you gonna give me some time, Sharona</span><br /><span>Ooh, you make my motor run, my motor run</span><br /><span>Got it coming off o' the line, Sharona<br /></span><span><br />Never gonna stop, give it up, such a dirty mind</span><br /><span>I always get it up, for the touch of the younger kind</span><br /><span>My, my, my, aye-aye, whoa!<br /></span><span>M-m-m-my Sharona</span></p>\n<p><span>Come a little closer, huh, a-will ya, huh?</span><br /><span>Close enough to look in my eyes, Sharona</span><br /><span>Keeping it a mystery, it gets to me</span><br /><span>Running down the length of my thigh, Sharona</span></p>\n<p><span>Never gonna stop, give it up, such a dirty mind</span><br /><span>I always get it up, for the touch of the younger kind</span><br /><span>My, my, my, aye-aye, whoa!</span><br /><span>M-m-m-my Sharona x2<br /></span><span><br />[Break1]</span></p>\n<p><span>When you gonna give to me, a gift to me</span><br /><span>Is it just a matter of time, Sharona?</span><br /><span>Is it d-d-destiny, d-destiny</span><br /><span>Or is it just a game in my mind, Sharona?</span></p>\n<p><span>Never gonna stop, give it up, such a dirty mind</span><br /><span>I always get it up, for the touch of the younger kind</span><br /><span>My, my, my, aye-aye, whoa!<br /></span><span>M-m-m-m-m-m-m-my, my, my, aye-aye, whoa!</span><span></p>\n<p>M-m-m-my Sharona x4</span><br /><span><br /></span><span>Ooooooo-ohhh, my Sharona</span><br /><span>Ooooooo-ohhh, my Sharona</span><br /><span>Ooooooo-ohhh, my Sharona</span></p>",
+          "chords": "",
+          "added": "2021-12-01 20:40:41",
+          "date_updated": "2021-12-02 01:40:41",
+          "setlistId": "9HCSxs-1732517138188"
+        },
+        {
+          "name": "Ain't that a Shame",
+          "artist": "Cheap Trick",
+          "key": "A",
+          "tempo": 132,
+          "tempo_subdivision": "1",
+          "duration": 290,
+          "lyrics": "<p><span>Ooh, my little pretty one, my pretty one</span><br /><span>When you gonna give me some time, Sharona</span><br /><span>Ooh, you make my motor run, my motor run</span><br /><span>Got it coming off o' the line, Sharona<br /></span><span><br />Never gonna stop, give it up, such a dirty mind</span><br /><span>I always get it up, for the touch of the younger kind</span><br /><span>My, my, my, aye-aye, whoa!<br /></span><span>M-m-m-my Sharona</span></p>\n<p><span>Come a little closer, huh, a-will ya, huh?</span><br /><span>Close enough to look in my eyes, Sharona</span><br /><span>Keeping it a mystery, it gets to me</span><br /><span>Running down the length of my thigh, Sharona</span></p>\n<p><span>Never gonna stop, give it up, such a dirty mind</span><br /><span>I always get it up, for the touch of the younger kind</span><br /><span>My, my, my, aye-aye, whoa!</span><br /><span>M-m-m-my Sharona x2<br /></span><span><br />[Break1]</span></p>\n<p><span>When you gonna give to me, a gift to me</span><br /><span>Is it just a matter of time, Sharona?</span><br /><span>Is it d-d-destiny, d-destiny</span><br /><span>Or is it just a game in my mind, Sharona?</span></p>\n<p><span>Never gonna stop, give it up, such a dirty mind</span><br /><span>I always get it up, for the touch of the younger kind</span><br /><span>My, my, my, aye-aye, whoa!<br /></span><span>M-m-m-m-m-m-m-my, my, my, aye-aye, whoa!</span><span></p>\n<p>M-m-m-my Sharona x4</span><br /><span><br /></span><span>Ooooooo-ohhh, my Sharona</span><br /><span>Ooooooo-ohhh, my Sharona</span><br /><span>Ooooooo-ohhh, my Sharona</span></p>",
+          "chords": "",
+          "added": "2018-10-20 18:26:20",
+          "date_updated": "2019-07-25 18:39:46",
+          "setlistId": "GhJyJ2-1732517137143"
+        },
+        {
+          "name": "All Day and All of the Night Song",
+          "artist": "The Kinks",
+          "key": "G",
+          "tempo": 132,
+          "tempo_subdivision": "0",
+          "duration": 290,
+          "lyrics": "<p><span>Ooh, my little pretty one, my pretty one</span><br /><span>When you gonna give me some time, Sharona</span><br /><span>Ooh, you make my motor run, my motor run</span><br /><span>Got it coming off o' the line, Sharona<br /></span><span><br />Never gonna stop, give it up, such a dirty mind</span><br /><span>I always get it up, for the touch of the younger kind</span><br /><span>My, my, my, aye-aye, whoa!<br /></span><span>M-m-m-my Sharona</span></p>\n<p><span>Come a little closer, huh, a-will ya, huh?</span><br /><span>Close enough to look in my eyes, Sharona</span><br /><span>Keeping it a mystery, it gets to me</span><br /><span>Running down the length of my thigh, Sharona</span></p>\n<p><span>Never gonna stop, give it up, such a dirty mind</span><br /><span>I always get it up, for the touch of the younger kind</span><br /><span>My, my, my, aye-aye, whoa!</span><br /><span>M-m-m-my Sharona x2<br /></span><span><br />[Break1]</span></p>\n<p><span>When you gonna give to me, a gift to me</span><br /><span>Is it just a matter of time, Sharona?</span><br /><span>Is it d-d-destiny, d-destiny</span><br /><span>Or is it just a game in my mind, Sharona?</span></p>\n<p><span>Never gonna stop, give it up, such a dirty mind</span><br /><span>I always get it up, for the touch of the younger kind</span><br /><span>My, my, my, aye-aye, whoa!<br /></span><span>M-m-m-m-m-m-m-my, my, my, aye-aye, whoa!</span><span></p>\n<p>M-m-m-my Sharona x4</span><br /><span><br /></span><span>Ooooooo-ohhh, my Sharona</span><br /><span>Ooooooo-ohhh, my Sharona</span><br /><span>Ooooooo-ohhh, my Sharona</span></p>",
+          "chords": "",
+          "added": "2023-04-25 11:49:45",
+          "date_updated": "2023-04-25 15:49:45",
+          "setlistId": "n1TVlm-1732517136621"
+        },
+        {
+          "name": "All the small things",
+          "artist": "Blink 182",
+          "key": "C",
+          "tempo": "149.00",
+          "tempo_subdivision": "0",
+          "duration": 167,
+          "lyrics": "<p><span>Ooh, my little pretty one, my pretty one</span><br /><span>When you gonna give me some time, Sharona</span><br /><span>Ooh, you make my motor run, my motor run</span><br /><span>Got it coming off o' the line, Sharona<br /></span><span><br />Never gonna stop, give it up, such a dirty mind</span><br /><span>I always get it up, for the touch of the younger kind</span><br /><span>My, my, my, aye-aye, whoa!<br /></span><span>M-m-m-my Sharona</span></p>\n<p><span>Come a little closer, huh, a-will ya, huh?</span><br /><span>Close enough to look in my eyes, Sharona</span><br /><span>Keeping it a mystery, it gets to me</span><br /><span>Running down the length of my thigh, Sharona</span></p>\n<p><span>Never gonna stop, give it up, such a dirty mind</span><br /><span>I always get it up, for the touch of the younger kind</span><br /><span>My, my, my, aye-aye, whoa!</span><br /><span>M-m-m-my Sharona x2<br /></span><span><br />[Break1]</span></p>\n<p><span>When you gonna give to me, a gift to me</span><br /><span>Is it just a matter of time, Sharona?</span><br /><span>Is it d-d-destiny, d-destiny</span><br /><span>Or is it just a game in my mind, Sharona?</span></p>\n<p><span>Never gonna stop, give it up, such a dirty mind</span><br /><span>I always get it up, for the touch of the younger kind</span><br /><span>My, my, my, aye-aye, whoa!<br /></span><span>M-m-m-m-m-m-m-my, my, my, aye-aye, whoa!</span><span></p>\n<p>M-m-m-my Sharona x4</span><br /><span><br /></span><span>Ooooooo-ohhh, my Sharona</span><br /><span>Ooooooo-ohhh, my Sharona</span><br /><span>Ooooooo-ohhh, my Sharona</span></p>",
+          "chords": "",
+          "added": "2020-07-14 13:54:52",
+          "date_updated": "2021-07-19 18:11:59",
+          "setlistId": "undefined-1732502617354"
+        },
+        {
+          "name": "1985",
+          "artist": "Bowling for soup",
+          "key": "B",
+          "pitch": "11",
+          "tempo": 132,
+          "tempo_subdivision": "0",
+          "duration": 290,
+          "lyrics": "<p><span>Ooh, my little pretty one, my pretty one</span><br /><span>When you gonna give me some time, Sharona</span><br /><span>Ooh, you make my motor run, my motor run</span><br /><span>Got it coming off o' the line, Sharona<br /></span><span><br />Never gonna stop, give it up, such a dirty mind</span><br /><span>I always get it up, for the touch of the younger kind</span><br /><span>My, my, my, aye-aye, whoa!<br /></span><span>M-m-m-my Sharona</span></p>\n<p><span>Come a little closer, huh, a-will ya, huh?</span><br /><span>Close enough to look in my eyes, Sharona</span><br /><span>Keeping it a mystery, it gets to me</span><br /><span>Running down the length of my thigh, Sharona</span></p>\n<p><span>Never gonna stop, give it up, such a dirty mind</span><br /><span>I always get it up, for the touch of the younger kind</span><br /><span>My, my, my, aye-aye, whoa!</span><br /><span>M-m-m-my Sharona x2<br /></span><span><br />[Break1]</span></p>\n<p><span>When you gonna give to me, a gift to me</span><br /><span>Is it just a matter of time, Sharona?</span><br /><span>Is it d-d-destiny, d-destiny</span><br /><span>Or is it just a game in my mind, Sharona?</span></p>\n<p><span>Never gonna stop, give it up, such a dirty mind</span><br /><span>I always get it up, for the touch of the younger kind</span><br /><span>My, my, my, aye-aye, whoa!<br /></span><span>M-m-m-m-m-m-m-my, my, my, aye-aye, whoa!</span><span></p>\n<p>M-m-m-my Sharona x4</span><br /><span><br /></span><span>Ooooooo-ohhh, my Sharona</span><br /><span>Ooooooo-ohhh, my Sharona</span><br /><span>Ooooooo-ohhh, my Sharona</span></p>",
+          "chords": "",
+          "added": "2018-10-21 00:16:23",
+          "date_updated": "2018-11-03 05:44:02",
+          "setlistId": "Qcgl2S-1732517134119"
+        },
+        {
+          "name": "Any way you want it",
+          "artist": "Journey",
+          "key": "G",
+          "tempo": 132,
+          "tempo_subdivision": "0",
+          "duration": 290,
+          "lyrics": "<p><span>Ooh, my little pretty one, my pretty one</span><br /><span>When you gonna give me some time, Sharona</span><br /><span>Ooh, you make my motor run, my motor run</span><br /><span>Got it coming off o' the line, Sharona<br /></span><span><br />Never gonna stop, give it up, such a dirty mind</span><br /><span>I always get it up, for the touch of the younger kind</span><br /><span>My, my, my, aye-aye, whoa!<br /></span><span>M-m-m-my Sharona</span></p>\n<p><span>Come a little closer, huh, a-will ya, huh?</span><br /><span>Close enough to look in my eyes, Sharona</span><br /><span>Keeping it a mystery, it gets to me</span><br /><span>Running down the length of my thigh, Sharona</span></p>\n<p><span>Never gonna stop, give it up, such a dirty mind</span><br /><span>I always get it up, for the touch of the younger kind</span><br /><span>My, my, my, aye-aye, whoa!</span><br /><span>M-m-m-my Sharona x2<br /></span><span><br />[Break1]</span></p>\n<p><span>When you gonna give to me, a gift to me</span><br /><span>Is it just a matter of time, Sharona?</span><br /><span>Is it d-d-destiny, d-destiny</span><br /><span>Or is it just a game in my mind, Sharona?</span></p>\n<p><span>Never gonna stop, give it up, such a dirty mind</span><br /><span>I always get it up, for the touch of the younger kind</span><br /><span>My, my, my, aye-aye, whoa!<br /></span><span>M-m-m-m-m-m-m-my, my, my, aye-aye, whoa!</span><span></p>\n<p>M-m-m-my Sharona x4</span><br /><span><br /></span><span>Ooooooo-ohhh, my Sharona</span><br /><span>Ooooooo-ohhh, my Sharona</span><br /><span>Ooooooo-ohhh, my Sharona</span></p>",
+          "chords": "",
+          "added": "2020-09-08 20:32:20",
+          "date_updated": "2020-09-09 00:40:30",
+          "setlistId": "CYDFLk-1732517139006"
+        }
+      ],
+      "created": "2024-11-25T02:43:22.920Z",
+      "updated": "2024-11-26T02:12:12.331Z"
+    },
+    "3bb7266cb3d5ac729dbef62e19fc6731": {
+      "name": "The Cabin",
+      "setlist": [],
+      "created": "2024-11-25T06:06:24.927Z",
+      "updated": "2024-11-26T01:03:21.180Z"
+    },
+    "1732583629892": {
+      "id": "1732583629892",
+      "name": "Gun Lake Casino",
+      "setlist": [
+        {
+          "type": "break",
+          "setlistId": "break-1732583629892",
+          "id": "break-1732583629892",
+          "name": "Set 1"
+        }
+      ],
+      "updated": "2024-11-26T01:16:09.895Z"
+    },
+    "1732587126970": {
+      "id": "1732587126970",
+      "name": "Kaden's list",
+      "setlist": [
+        {
+          "type": "break",
+          "setlistId": "break-1732587126970",
+          "id": "break-1732587126970",
+          "name": "Set 1"
+        }
+      ],
+      "updated": "2024-11-26T02:26:35.308Z"
+    }
+  }
+}

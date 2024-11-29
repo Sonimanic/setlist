@@ -1,0 +1,31 @@
+{
+  "playlists": {
+    "1732598969472": {
+      "id": "1732598969472",
+      "name": "The BOB",
+      "setlist": [
+        {
+          "name": "All the small things",
+          "artist": "Blink 182",
+          "key": "C",
+          "tempo": 149,
+          "tempo_subdivision": "0",
+          "duration": 167,
+          "lyrics": "<p>All the small things<br />True care truth brings<br />I'll take one lift<br />Your ride, best trip<br />Always I know<br />You'll be at my show<br />Watching, waiting<br />Commiserating</p>\n<p>Say it ain't so, I will not go<br />Turn the lights off, carry me home<br />Na-na, na-na, na-na, na-na, na, na<br />Na-na, na-na, na-na, na-na, na, na<br />Na-na, na-na, na-na, na-na, na, na<br />Na-na, na-na, na-na, na-na, na, na</p>\n<p>Late night, come home<br />Work sucks, I know<br />She left me roses by the stairs<br />Surprises let me know she cares</p>\n<p>Say it ain't so, I will not go<br />Turn the lights off, carry me home<br />Na-na, na-na, na-na, na-na, na, na<br />Na-na, na-na, na-na, na-na, na, na<br />Na-na, na-na, na-na, na-na, na, na<br />Na-na, na-na, na-na, na-na, na, na</p>\n<p>[8 bars]</p>\n<p>Say it ain't so, I will not go<br />Turn the lights off, carry me home<br />Keep your head still, I'll be your thrill<br />The night will go on, my little windmill</p>\n<p>Say it ain't so, I will not go (na-na, na-na, na-na, na-na, na, na)<br />Turn the lights off, carry me home (na-na, na-na, na-na, na-na, na, na)<br />Keep your head still, I'll be your thrill (na-na, na-na, na-na, na-na, na, na)<br />The night will go on (na-na, na-na, na-na, na-na, na, na)<br />The night will go on (na-na, na, na)<br />My little windmill</p>\n<p></p>\n<p></p>",
+          "chords": "",
+          "added": "2020-07-14 13:54:52",
+          "date_updated": "2021-07-19 18:11:59",
+          "id": "r9ztGX",
+          "setlistId": "r9ztGX-1732598987204"
+        },
+        {
+          "type": "break",
+          "setlistId": "break-1732598969472",
+          "id": "break-1732598969472",
+          "name": "Set 1"
+        }
+      ],
+      "updated": "2024-11-26T05:29:47.252Z"
+    }
+  }
+}
