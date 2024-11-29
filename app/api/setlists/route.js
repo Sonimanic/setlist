@@ -100,6 +100,13 @@ async function readSetlists() {
 
 export async function GET() {
   try {
+    // Set CORS headers
+    const headers = {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+      'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+    };
+
     console.log('Current working directory:', process.cwd());
     console.log('Setlists path:', setlistsPath);
     
@@ -110,15 +117,43 @@ export async function GET() {
     const data = await readSetlists();
     console.log('Successfully read setlists:', Object.keys(data.setlists || {}).length);
     
-    return NextResponse.json(data);
+    return new NextResponse(JSON.stringify(data), {
+      status: 200,
+      headers: headers
+    });
   } catch (error) {
     console.error('Error in GET route:', error);
-    return NextResponse.json({ setlists: {}, error: error.message });
+    return new NextResponse(JSON.stringify({ setlists: {}, error: error.message }), {
+      status: 500,
+      headers: {
+        'Content-Type': 'application/json',
+        ...headers
+      }
+    });
   }
+}
+
+// Handle OPTIONS requests for CORS
+export async function OPTIONS() {
+  return new NextResponse(null, {
+    status: 204,
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+      'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+    },
+  });
 }
 
 export async function POST(request) {
   try {
+    // Set CORS headers
+    const headers = {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+      'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+    };
+
     await ensureDataDirectory();
     await initializeSetlistsFile();
 
@@ -136,7 +171,10 @@ export async function POST(request) {
       }
 
       await fs.writeFile(setlistsPath, JSON.stringify({ setlists: requestData.setlists }, null, 2));
-      return NextResponse.json({ success: true });
+      return new NextResponse(JSON.stringify({ success: true }), {
+        status: 200,
+        headers: headers
+      });
     }
     
     // If we're creating a new setlist
@@ -158,18 +196,36 @@ export async function POST(request) {
       // Save updated setlists
       await fs.writeFile(setlistsPath, JSON.stringify({ setlists: newSetlists }, null, 2));
       
-      return NextResponse.json({ success: true, id });
+      return new NextResponse(JSON.stringify({ success: true, id }), {
+        status: 200,
+        headers: headers
+      });
     }
 
     throw new Error('Invalid request data');
   } catch (error) {
     console.error('Error saving setlists:', error);
-    return NextResponse.json({ error: error.message || 'Failed to save setlists' }, { status: 500 });
+    return new NextResponse(JSON.stringify({ error: error.message || 'Failed to save setlists' }), {
+      status: 500,
+      headers: {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+        'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+      }
+    });
   }
 }
 
 export async function PUT(request) {
   try {
+    // Set CORS headers
+    const headers = {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+      'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+    };
+
     await ensureDataDirectory();
     await initializeSetlistsFile();
 
@@ -194,15 +250,33 @@ export async function PUT(request) {
     };
 
     await fs.writeFile(setlistsPath, JSON.stringify({ setlists: updatedSetlists }, null, 2));
-    return NextResponse.json({ success: true });
+    return new NextResponse(JSON.stringify({ success: true }), {
+      status: 200,
+      headers: headers
+    });
   } catch (error) {
     console.error('Error updating setlist:', error);
-    return NextResponse.json({ error: error.message || 'Failed to update setlist' }, { status: 500 });
+    return new NextResponse(JSON.stringify({ error: error.message || 'Failed to update setlist' }), {
+      status: 500,
+      headers: {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+        'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+      }
+    });
   }
 }
 
 export async function DELETE(request) {
   try {
+    // Set CORS headers
+    const headers = {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+      'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+    };
+
     await ensureDataDirectory();
     await initializeSetlistsFile();
 
@@ -220,9 +294,20 @@ export async function DELETE(request) {
     const { [requestData.id]: removedSetlist, ...remainingSetlists } = currentData.setlists;
 
     await fs.writeFile(setlistsPath, JSON.stringify({ setlists: remainingSetlists }, null, 2));
-    return NextResponse.json({ success: true });
+    return new NextResponse(JSON.stringify({ success: true }), {
+      status: 200,
+      headers: headers
+    });
   } catch (error) {
     console.error('Error deleting setlist:', error);
-    return NextResponse.json({ error: error.message || 'Failed to delete setlist' }, { status: 500 });
+    return new NextResponse(JSON.stringify({ error: error.message || 'Failed to delete setlist' }), {
+      status: 500,
+      headers: {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+        'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+      }
+    });
   }
 }
