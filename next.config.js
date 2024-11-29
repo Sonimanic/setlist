@@ -24,7 +24,7 @@ const nextConfig = {
   },
   webpack: (config, { isServer }) => {
     config.watchOptions = {
-      ignored: ['**/node_modules', '**/.next', '**/out']
+      ignored: ['**/node_modules', '**/.next', '**/out', '**/data/backups/**']
     };
     // Optimize build performance
     if (!isServer) {
@@ -53,7 +53,7 @@ const nextConfig = {
       };
     }
     return config;
-  }
+  },
 };
 
 module.exports = withPWA(nextConfig);
