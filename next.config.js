@@ -19,6 +19,14 @@ const nextConfig = {
       },
     ];
   },
+  // Disable traces in development
+  generateBuildId: async () => {
+    return 'build-' + Date.now();
+  },
+  experimental: {
+    ...nextConfig.experimental,
+    outputFileTracingRoot: process.env.NODE_ENV === 'development' ? undefined : process.cwd(),
+  },
 };
 
 // Apply PWA configuration only in production
