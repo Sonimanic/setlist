@@ -20,9 +20,9 @@ import {
 import { CSS } from '@dnd-kit/utilities';
 import { restrictToVerticalAxis, snapCenterToCursor } from '@dnd-kit/modifiers';
 import { Lock, Unlock, MoveUp, MoveDown, Trash2, PlusCircle, X, Edit, Save as SaveIcon, FolderOpen, List, Plus, Music4, Library, Coffee, ChevronDown, ChevronUp, Clock, Edit2, Eye, FileText, GripVertical, ListMusic, Loader2, Menu as Menu2, RefreshCw, ListMusic as ListMusic2, FileText as FileText2, ChevronRight } from 'lucide-react';
-import { LyricsModal } from "@/components/lyrics-modal";
-import AddSongForm from '../components/AddSongForm';
-import EditSongForm from '../components/EditSongForm';
+import { LyricsModal } from "@/components/lyrics-modal.js";
+import AddSongForm from '../components/AddSongForm.js';
+import EditSongForm from '../components/EditSongForm.js';
 import {
   AlertDialog,
   AlertDialogAction,
@@ -32,12 +32,12 @@ import {
   AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogTitle,
-} from "@/components/ui/alert-dialog";
-import { Notification } from "@/components/ui/notification";
-import { Label } from "@/components/ui/label";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { Textarea } from "@/components/ui/textarea";
+} from "@/components/ui/alert-dialog.jsx";
+import { Notification } from "@/components/ui/notification.jsx";
+import { Label } from "@/components/ui/label.jsx";
+import { Input } from "@/components/ui/input.jsx";
+import { Button } from "@/components/ui/button.jsx"; // Update the Button import to use the correct extension
+import { Textarea } from "@/components/ui/textarea.jsx";
 
 // Utility function for formatting duration
 const formatDuration = (seconds) => {

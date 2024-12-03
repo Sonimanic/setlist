@@ -1,4 +1,6 @@
-export function Button({ children, ...props }) {
+import React from 'react';
+
+const Button = ({ children, ...props }) => {
   return (
     <button 
       className="px-4 py-2 bg-black text-white rounded hover:bg-gray-800" 
@@ -7,4 +9,6 @@ export function Button({ children, ...props }) {
       {children}
     </button>
   );
-} 
+}
+
+export { Button };
